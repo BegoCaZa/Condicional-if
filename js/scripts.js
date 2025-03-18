@@ -105,3 +105,43 @@ const candyAssignment = (number)=>{
 
 candyAssignment(9)
 candyAssignment(10)
+
+//Ejercicio 8
+//8️⃣ Sabrina está planificando un viaje muy especial para celebrar el año nuevo y quiere saber si el año en el que piensa viajar es bisiesto, ya que eso afectará la fecha del viaje. Crea una función que reciba un año como parámetro y determine, siguiendo la regla de que un año es bisiesto si es divisible por 4, pero no por 100, a menos que también sea divisible por 400, si es bisiesto ("Es un año bisiesto") o si no lo es ("No es un año bisiesto").
+const isThisALeapYear=(year)=>{
+    if((year%4===0 && year%100!==0) || (year%400===0)){
+        console.log ('Este año si es biciesto')
+    } else {
+        console.log ("Este año no es biciesto")
+    }
+}
+
+isThisALeapYear(2025)
+isThisALeapYear(2028)
+
+//Ejercicio 9
+//9️⃣ Abby está hackeando un sistema de seguridad en una misión secreta. Para acceder, debe introducir un código numérico. La puerta solo se abrirá si el número es par y mayor que 50, o si es impar pero un múltiplo de 7. Crea una función que reciba un número y determine si Abby podrá entrar ("Acceso concedido") o si la puerta seguirá bloqueada ("Acceso denegado").
+const hackingCode=(code)=>{
+    if((code%2===0 && code>50) || (code%2!==0 && code%7===0)){
+        console.log ("Acceso concedico")
+    }else{
+        console.log ("Acceso denegado")
+    }
+}
+
+hackingCode(40)
+hackingCode(49)
+
+//Ejercicio 10
+//🔟 Macarena está evaluando la salud de sus perros según su peso y edad. Un perro se considera en peso saludable sólo si pesa entre 8 y 30 kg. Además solo se considerará saludable si su edad es un número múltiplo de 3 y menor de 15. Crea una función que reciba el peso del perro y su edad. Determina si está saludable ("El perro está saludable") o si no ("Perro pocho 😢").
+
+const dogsHealth=(weight,age)=>{
+    if((weight>=8 && weight<=30) && (age%3===0 && age<=15)){
+        console.log ("El perro está saludable")
+    } else {
+        console.log ("Perro pocho")
+    }
+}
+
+dogsHealth(20,6)
+dogsHealth(32,12)
