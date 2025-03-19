@@ -136,7 +136,7 @@ hackingCode(49)
 //🔟 Macarena está evaluando la salud de sus perros según su peso y edad. Un perro se considera en peso saludable sólo si pesa entre 8 y 30 kg. Además solo se considerará saludable si su edad es un número múltiplo de 3 y menor de 15. Crea una función que reciba el peso del perro y su edad. Determina si está saludable ("El perro está saludable") o si no ("Perro pocho 😢").
 
 const dogsHealth=(weight,age)=>{
-    if((weight>=8 && weight<=30) && (age%3===0 && age<=15)){
+    if(weight>=8 && weight<=30 && age%3===0 && age<=15){
         console.log ("El perro está saludable")
     } else {
         console.log ("Perro pocho")
@@ -145,3 +145,4 @@ const dogsHealth=(weight,age)=>{
 
 dogsHealth(20,6)
 dogsHealth(32,12)
+dogsHealth(32,19)
